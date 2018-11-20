@@ -7,7 +7,7 @@ fi
 # Installing server
 APP=$APP_ID
 if [ ! -z "$APP_BRANCH" ]; then 
-    APP=$APP -beta $APP_BRANCH
+    APP="$APP -beta $APP_BRANCH"
 fi
 /steam/steamcmd.sh +login anonymous +force_install_dir /server +app_update $APP +exit
 

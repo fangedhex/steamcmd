@@ -17,4 +17,4 @@ if [ -z "$APP_CMD" ]; then
 fi
 
 # Launching
-cd /server && $APP_CMD $APP_PARAMS
+cd /server && ./$APP_CMD $APP_PARAMS
